@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Stamp Document</h1>
+    <form action="{{ url_for('main.stamp') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Stamp">
+    </form>
+{% endblock %}
